@@ -63,7 +63,7 @@ def open_image_file():
     initial_dir = os.path.abspath(os.path.dirname(__file__))
     file_path = filedialog.askopenfilename(
         initialdir=initial_dir,
-        filetypes=[("Image Files", "*.png;*.jpg;*.jpeg;*.bmp;*.gif;*.tiff")]
+        filetypes=[("Image Files", "*")]
     )
     if file_path:
         image_entry.delete(0, tk.END)
